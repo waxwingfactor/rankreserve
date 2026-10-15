@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "reviewer": "Separate AI acceptance and public-source verification agent",
+  "verified_at_utc": "2026-10-15T19:40:28Z",
+  "result": "passed",
+  "release_url": "https://github.com/waxwingfactor/rankreserve/releases/tag/v1.0.0",
+  "release_id": 414198198,
+  "public_anonymous_downloads": true,
+  "authentication_headers_used": false,
+  "release_draft": false,
+  "release_prerelease": false,
+  "source_commit": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+  "source_tree": "23b2aaf72c631185b72c79709bb70a57f1e25d32",
+  "annotated_tag_sha": "d46d71203c68cd31e773f60b029ff6b871f075e0",
+  "source_tag_matches_provenance": true,
+  "source_tree_matches_provenance": true,
+  "ci": {
+    "url": "https://github.com/waxwingfactor/rankreserve/actions/runs/38794852686",
+    "head_sha": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "distribution",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (macos-latest, 3.12)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (windows-latest, 3.12)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (windows-latest, 3.10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.14)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (macos-latest, 3.10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (windows-latest, 3.14)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.12)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (macos-latest, 3.14)",
+        "conclusion": "success"
+      },
+      {
+        "name": "quality",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "downloaded_assets": [
+    {
+      "name": "rankreserve-1.0.0.tar.gz",
+      "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/rankreserve-1.0.0.tar.gz",
+      "bytes": 39646,
+      "sha256": "3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9",
+      "github_asset_digest": "sha256:3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9",
+      "github_digest_matches": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/SHA256SUMS",
+      "bytes": 274,
+      "sha256": "2ec5f4ae1baf27d8a3c4b6af4f8daf69976662440cf5d5f40c729296e2b87e1f",
+      "github_asset_digest": "sha256:2ec5f4ae1baf27d8a3c4b6af4f8daf69976662440cf5d5f40c729296e2b87e1f",
+      "github_digest_matches": true
+    },
+    {
+      "name": "provenance.json",
+      "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/provenance.json",
+      "bytes": 1442,
+      "sha256": "ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176",
+      "github_asset_digest": "sha256:ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176",
+      "github_digest_matches": true
+    }
+  ],
+  "checksum_manifest_and_provenance_match_sdist": true,
+  "safe_extraction": {
+    "members": 37,
+    "absolute_paths_or_escape": false,
+    "symlinks_hardlinks_devices": false,
+    "private_userpath_markers_found": false,
+    "required_files_present": [
+      "README.md",
+      "LICENSE",
+      "SECURITY.md",
+      "pyproject.toml",
+      "docs/contracts.md",
+      "docs/research.md",
+      "docs/positioning.md",
+      "docs/architecture.md",
+      "docs/verification.md",
+      "tests/test_acceptance.py",
+      "scripts/smoke.py",
+      "scripts/check_dist.py",
+      "src/rankreserve/examples/design.csv",
+      "src/rankreserve/examples/README.txt"
+    ]
+  },
+  "environment": {
+    "python": "3.12.13",
+    "implementation": "CPython",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "sqlite": "3.53.0",
+    "pip": "26.0.1",
+    "venv_fresh": true,
+    "noneditable": true,
+    "isolated_pep517_build": true,
+    "pythonpath_pythonhome_removed": true,
+    "installed_in_site_packages": true,
+    "package_version": "1.0.0"
+  },
+  "installed_package_sha256": {
+    "core.py": "c06f6be185938ff992b96dd289b958ba187a1951dcdfdc9ed59c517c65041873",
+    "cli.py": "3392688e3ea5f5aa2a8633280e2ebfa33e5891b8d6f353d6ebb0d1c8a4823aa8"
+  },
+  "installed_modules_match_provenance_and_public_tag_source": true,
+  "tests": {
+    "origin": "Only tests in the actual downloaded source distribution",
+    "command_pattern": "<fresh-venv>/bin/python -I -m unittest discover -s <extracted-sdist>/tests -v",
+    "working_directory": "Outside extracted source and development checkout",
+    "count": 33,
+    "elapsed_seconds": 27.613,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "result": "passed"
+  },
+  "smoke": {
+    "origin": "scripts/smoke.py from actual downloaded source distribution",
+    "command_pattern": "<fresh-venv>/bin/python -I <extracted-sdist>/scripts/smoke.py",
+    "working_directory": "Outside extracted source and development checkout",
+    "result": "passed"
+  },
+  "workflow": {
+    "result": "passed",
+    "checks": [
+      "Exact downloaded README learning workflow exits 0 at complete revision 5",
+      "README export contains final manifest and complete snapshot",
+      "Stale write, unnecessary activation and unauthorized reserve sampling reject without mutation",
+      "Post-replacement amendment preserves activation, flags conflict and blocks new activation",
+      "Exact downloaded README incident command preserves unused disposition and holds pool",
+      "Relocated backup inspection/export succeeds after extracted source, source database and design CSV removal"
+    ],
+    "source_tree_removed_before_final_operation": true,
+    "no_pythonpath_or_pythonhome": true,
+    "isolated_python_runtime_commands": true,
+    "runtime_network": "not required; runtime verification used restricted default sandbox",
+    "package_version": "1.0.0"
+  },
+  "build_install_command_pattern": "env -u PYTHONPATH -u PYTHONHOME <fresh-venv>/bin/python -I -m pip --isolated install --no-deps --no-cache-dir --use-pep517 <downloaded-sdist.tar.gz>",
+  "harness_notes": [
+    "An initial extraction-helper invocation used the older host default interpreter, which lacked the requested tar extraction filter; it stopped before extraction. Safe extraction and every product build/test then used the specified CPython 3.12.13 interpreter."
+  ],
+  "limitations": [
+    "This agent independently exercised one local macOS arm64 environment; successful CI jobs were checked through public GitHub metadata.",
+    "Publisher-supplied hashes and provenance establish identity against those records, not independent publisher authenticity.",
+    "This is installation and synthetic-workflow verification, not customer adoption, production deployment, scientific design validity, access permission or field safety."
+  ]
+}

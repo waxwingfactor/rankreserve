@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "product": "RankReserve",
+  "version": "1.0.0",
+  "verification_role": "separate AI-agent independent published-wheel verification",
+  "verified_at_utc": "2026-10-15T19:41:57Z",
+  "status": "passed",
+  "public_release": {
+    "anonymous": true,
+    "release_url": "https://github.com/waxwingfactor/rankreserve/releases/tag/v1.0.0",
+    "release_id": 414198198,
+    "published_at": "2026-10-15T19:35:33Z",
+    "tag": "v1.0.0",
+    "source_commit": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+    "assets": [
+      {
+        "name": "provenance.json",
+        "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/provenance.json",
+        "http_status": 200,
+        "size": 1442,
+        "sha256": "ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176",
+        "github_digest": "sha256:ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176"
+      },
+      {
+        "name": "rankreserve-1.0.0-py3-none-any.whl",
+        "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/rankreserve-1.0.0-py3-none-any.whl",
+        "http_status": 200,
+        "size": 18970,
+        "sha256": "39c0a778a9bc5645e9bab31ef6b75b8c3a62f5f5097aa95fc9c98b7b761deb57",
+        "github_digest": "sha256:39c0a778a9bc5645e9bab31ef6b75b8c3a62f5f5097aa95fc9c98b7b761deb57"
+      },
+      {
+        "name": "rankreserve-1.0.0.tar.gz",
+        "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/rankreserve-1.0.0.tar.gz",
+        "http_status": 200,
+        "size": 39646,
+        "sha256": "3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9",
+        "github_digest": "sha256:3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9"
+      },
+      {
+        "name": "SHA256SUMS",
+        "url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/SHA256SUMS",
+        "http_status": 200,
+        "size": 274,
+        "sha256": "2ec5f4ae1baf27d8a3c4b6af4f8daf69976662440cf5d5f40c729296e2b87e1f",
+        "github_digest": "sha256:2ec5f4ae1baf27d8a3c4b6af4f8daf69976662440cf5d5f40c729296e2b87e1f"
+      }
+    ],
+    "ci": {
+      "url": "https://github.com/waxwingfactor/rankreserve/actions/runs/38794852686",
+      "head_sha": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "distribution",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (macos-latest, 3.12)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (windows-latest, 3.12)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (windows-latest, 3.10)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.14)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (macos-latest, 3.10)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (windows-latest, 3.14)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.12)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (ubuntu-latest, 3.10)",
+          "conclusion": "success"
+        },
+        {
+          "name": "test (macos-latest, 3.14)",
+          "conclusion": "success"
+        },
+        {
+          "name": "quality",
+          "conclusion": "success"
+        }
+      ]
+    }
+  },
+  "source_identity": {
+    "anonymous_source_tree_http_status": 200,
+    "source_commit": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+    "source_tree": "23b2aaf72c631185b72c79709bb70a57f1e25d32",
+    "all_tracked_package_docs_tests_scripts_in_sdist": true,
+    "sdist_files_matching_git_tree": [
+      "CHANGELOG.md",
+      "LICENSE",
+      "MANIFEST.in",
+      "README.md",
+      "SECURITY.md",
+      "docs/architecture.md",
+      "docs/contracts.md",
+      "docs/positioning.md",
+      "docs/research.md",
+      "docs/reviews.md",
+      "docs/verification.md",
+      "pyproject.toml",
+      "scripts/check_dist.py",
+      "scripts/smoke.py",
+      "src/rankreserve/__init__.py",
+      "src/rankreserve/__main__.py",
+      "src/rankreserve/cli.py",
+      "src/rankreserve/core.py",
+      "src/rankreserve/examples/README.txt",
+      "src/rankreserve/examples/design.csv",
+      "tests/test_acceptance.py",
+      "tests/test_integrity.py"
+    ],
+    "provenance_package_hashes_match_wheel": true,
+    "provenance_artifact_hashes_match_downloads": true
+  },
+  "wheel_integrity": {
+    "wheel_record_hashed_files": 11,
+    "wheel_record_all_members_listed": true,
+    "runtime_requires_dist": [],
+    "wheel_core_sha256": "c06f6be185938ff992b96dd289b958ba187a1951dcdfdc9ed59c517c65041873",
+    "wheel_cli_sha256": "3392688e3ea5f5aa2a8633280e2ebfa33e5891b8d6f353d6ebb0d1c8a4823aa8",
+    "checksum_entries": {
+      "provenance.json": "ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176",
+      "rankreserve-1.0.0-py3-none-any.whl": "39c0a778a9bc5645e9bab31ef6b75b8c3a62f5f5097aa95fc9c98b7b761deb57",
+      "rankreserve-1.0.0.tar.gz": "3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9"
+    },
+    "safe_source_extraction": true
+  },
+  "environment_and_installed_tests": {
+    "python": "3.14.4",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "implementation": "CPython",
+    "installed_module": "venv/lib/python3.14/site-packages/rankreserve/__init__.py",
+    "installed_distributions": [
+      {
+        "name": "pip",
+        "version": "26.0.1"
+      },
+      {
+        "name": "rankreserve",
+        "version": "1.0.0"
+      }
+    ],
+    "PYTHONPATH_present": false,
+    "PYTHONHOME_present": false,
+    "isolated_mode": true,
+    "tests_source": "actual published sdist",
+    "installed_artifact": "actual published wheel",
+    "tests_run": 33,
+    "errors": 0,
+    "failures": 0,
+    "skips": [],
+    "success": true,
+    "core_sha256": "c06f6be185938ff992b96dd289b958ba187a1951dcdfdc9ed59c517c65041873",
+    "cli_sha256": "3392688e3ea5f5aa2a8633280e2ebfa33e5891b8d6f353d6ebb0d1c8a4823aa8",
+    "editable_install": false,
+    "installed_archive_sha256": "39c0a778a9bc5645e9bab31ef6b75b8c3a62f5f5097aa95fc9c98b7b761deb57"
+  },
+  "runtime_workflow": {
+    "console_version": "1.0.0",
+    "isolated_mode": true,
+    "runtime_socket_guard": "all socket.* audit events denied",
+    "socket_attempts": 0,
+    "commands_run": 24,
+    "command_results": [
+      {
+        "arguments": [
+          "examples",
+          "--out",
+          "packaged-example"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "init",
+          "design.csv",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--approval-note",
+          "Constructed verification fixture only",
+          "--protocol-ref",
+          "SYNTHETIC-VERIFICATION",
+          "--completion-rule",
+          "All synthetic required work",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "activate",
+          "--pool",
+          "P",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "0",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "campaign.sqlite",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "A",
+          "deferred",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "0",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "activate",
+          "--pool",
+          "P",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "1",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "A",
+          "access_denied",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "1",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "activate",
+          "--pool",
+          "P",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "2",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "R1",
+          "sampled",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "3",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "A",
+          "sampled",
+          "--amend",
+          "2",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "4",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "activate",
+          "--pool",
+          "P",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "5",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "A",
+          "non_target",
+          "--amend",
+          "5",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "5",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "B",
+          "ready",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "5",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "campaign.sqlite",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "B",
+          "not_sampleable",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "6",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "campaign.sqlite",
+          "--json",
+          "--check-complete"
+        ],
+        "expected_exit": 3,
+        "observed_exit": 3,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "incident",
+          "R2",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "7",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "record",
+          "R2",
+          "sampled",
+          "--db",
+          "campaign.sqlite",
+          "--actor",
+          "Independent reviewer",
+          "--note",
+          "Constructed verification observation",
+          "--observed-on",
+          "2026-10-15",
+          "--expect",
+          "8",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "campaign.sqlite",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "export",
+          "--db",
+          "campaign.sqlite",
+          "--out",
+          "handoff"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "backup",
+          "--db",
+          "campaign.sqlite",
+          "--out",
+          "backup.sqlite",
+          "--expect",
+          "8"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "different-directory/relocated.sqlite",
+          "--json"
+        ],
+        "expected_exit": 0,
+        "observed_exit": 0,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "missing.sqlite",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      },
+      {
+        "arguments": [
+          "status",
+          "--db",
+          "corrupt.sqlite",
+          "--json"
+        ],
+        "expected_exit": 2,
+        "observed_exit": 2,
+        "socket_attempts": []
+      }
+    ],
+    "observations": {
+      "packaged_examples_available": true,
+      "premature_activation_rejected_without_mutation": true,
+      "deferred_preserves_capacity": true,
+      "lowest_rank_only_activated": true,
+      "amendment_conflict_visible": true,
+      "activation_blocked_in_conflict": true,
+      "truthful_correction_preserved": true,
+      "stale_revision_rejected": true,
+      "exhaustion_visible_and_check_complete_exit_3": true,
+      "off_plan_incident_holds_pool_without_authorizing_reserve": true,
+      "unused_reserve_outcome_rejected": true,
+      "export_manifest_and_hashes_verified": true,
+      "backup_relocated_after_source_db_and_design_removed": true,
+      "missing_db_not_created": true,
+      "corrupt_file_unchanged_and_clear_failure": true
+    },
+    "final_revision": 8,
+    "final_pool_states": {
+      "P": "exception",
+      "Q": "exhausted"
+    },
+    "public_paths_only": true
+  },
+  "downloaded_smoke": {
+    "source": "actual published sdist scripts/smoke.py",
+    "interpreter": "fresh wheel-installed CPython 3.14.4",
+    "cwd": "outside development checkout",
+    "isolated_mode": true,
+    "exit_code": 0,
+    "observed": "Ordered activation, premature/stale guard failures, successful completion, complete export, backup and source-database removal passed."
+  },
+  "command_patterns": [
+    "python3.14 -m venv <fresh>/venv",
+    "<fresh>/venv/bin/python -I -m pip install --no-index --no-deps <downloaded-wheel>",
+    "<fresh>/venv/bin/python -I <verification-runner using downloaded-sdist tests>",
+    "<fresh>/venv/bin/python -I <downloaded-sdist>/scripts/smoke.py",
+    "<fresh>/venv/bin/python -I <socket-denying-wrapper> <rankreserve arguments>"
+  ],
+  "limits": [
+    "Publisher-provided hashes/provenance and GitHub digests identify these exact downloaded bytes; they do not provide independent publisher authenticity.",
+    "This verifies the released wheel locally on macOS arm64/Python 3.14.4; the separately identified CI run covers its published matrix.",
+    "No customer deployment, adoption or scientific validity was established. Fixed independent pools, single local coordinator, permanent version-1 incident holds and documented statistical/security exclusions remain."
+  ],
+  "artifact_bug_found": false,
+  "source_or_release_modified_by_verifier": false
+}
