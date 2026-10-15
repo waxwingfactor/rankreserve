@@ -1,0 +1,15 @@
+# Architecture and maintenance
+
+The interface is a CLI because the beachhead is a coordinator already working with exported design files, scripts and analyst handoffs. No server, browser application, database service or internet connection is needed. Mobile measurement capture remains in the field team's existing tools. This keeps the supported offline workflow portable and small.
+
+`core.py` owns strict design parsing, metadata validation, SQLite lifecycle, ledger replay, transition policy, revision guards and backup. `cli.py` translates arguments, renders snapshots and writes exports. `__main__.py` and the console entry point use the same implementation. Runtime uses only Python's standard library. Packaging uses setuptools; the build frontend is a development dependency.
+
+The database stores one metadata document and an ordered event table. Canonical metadata roots a SHA256 chain; events include their predecessor hash. State is derived by replay, not trusted from an editable status cache. Activation and disposition are separate: a failed reserve remains ever activated, and an amendment cannot retract that fact. All bases start active at revision 0. An incident preserves off-plan observations separately from authorized state transitions.
+
+Reads produce one consistent SQLite snapshot. Mutations acquire a writer transaction before replay and guard checking, so two writers cannot both activate the same next reserve. Expected revisions additionally prevent a decision based on an old crew export from overwriting current facts. Backups use SQLite's backup API against a read snapshot, validate the copy, and preserve the source revision without adding an event. They do not invoke backup inside the same connection's writer transaction.
+
+No command starts a subprocess or executes user code. SQL values are bound. Existing database schemas and metadata must match the supported application contract. Input limits prevent unintended large local campaigns; they do not sandbox malicious SQLite files. Only trusted local database files belong in this tool. Filesystem permissions, encryption, identity verification and authenticity remain external.
+
+The exact transition invariants are tested through the installed CLI in independent acceptance tests, with additional integrity and fault tests. CI exercises Linux, macOS and Windows on Python 3.10, 3.12 and 3.14, plus wheel/sdist packaging. The aggregate `quality` check is required by protected main; an independent AI-agent review is recorded honestly on each implementation PR. Repository ownership belongs to one account, so no second-human approval is represented or required.
+
+To develop: create a virtual environment, `python -m pip install . build`, `python -m unittest discover -s tests -v`, `python scripts/smoke.py`, `python -m build`, then `python scripts/check_dist.py`. Reinstall after code changes; tests deliberately exercise a non-editable installed copy. Changes to state semantics require contract and failure-case review, not just passing happy-path examples. There is no automatic database migration from an unsupported future schema.

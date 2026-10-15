@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rankreserve"
+version = "1.0.0"
+description = "Offline ranked reserve activation and disposition ledger for approved survey pools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "RankReserve contributors"}]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Repository = "https://github.com/waxwingfactor/rankreserve"
+Issues = "https://github.com/waxwingfactor/rankreserve/issues"
+Documentation = "https://github.com/waxwingfactor/rankreserve#readme"
+
+[project.scripts]
+rankreserve = "rankreserve.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rankreserve = ["examples/*"]

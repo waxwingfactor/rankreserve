@@ -1,0 +1,8 @@
+site_id,pool,rank,role,label
+I-001,Inland,10,base,Constructed first base
+I-002,Inland,20,base,Constructed second base
+I-003,Inland,30,reserve,First reserve
+I-004,Inland,40,reserve,Second reserve
+I-005,Inland,50,reserve,Third reserve
+T-001,Tidal,10,base,Independent pool base
+T-002,Tidal,20,reserve,Independent pool reserve
