@@ -5,6 +5,7 @@ The crash fixture is skipped if the platform SQLite build does not produce a
 hot rollback journal. Fault injection is intentionally limited to test fixtures.
 """
 
+from contextlib import closing
 from pathlib import Path
 import sqlite3
 import subprocess
@@ -39,8 +40,9 @@ class CoreFaultReview(unittest.TestCase):
         )
 
     def change(self, sql, values=()):
-        with sqlite3.connect(self.db) as connection:
-            connection.execute(sql, values)
+        with closing(sqlite3.connect(self.db)) as connection:
+            with connection:
+                connection.execute(sql, values)
 
     @staticmethod
     def failing_commit_connection():
@@ -120,12 +122,13 @@ os._exit(0)
             core.snapshot(self.db)
 
     def test_duplicate_json_metadata_key_is_rejected(self):
-        with sqlite3.connect(self.db) as connection:
-            document = connection.execute(
-                "SELECT document FROM metadata",
-            ).fetchone()[0]
-            document = document[:-1] + ',"schema_version":1}'
-            connection.execute("UPDATE metadata SET document=?", (document,))
+        with closing(sqlite3.connect(self.db)) as connection:
+            with connection:
+                document = connection.execute(
+                    "SELECT document FROM metadata",
+                ).fetchone()[0]
+                document = document[:-1] + ',"schema_version":1}'
+                connection.execute("UPDATE metadata SET document=?", (document,))
         with self.assertRaises(core.RankReserveError):
             core.snapshot(self.db)
 
