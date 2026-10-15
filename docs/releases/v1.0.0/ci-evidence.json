@@ -1,0 +1,102 @@
+{
+  "run_url": "https://github.com/waxwingfactor/rankreserve/actions/runs/38794852686",
+  "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+  "required_quality": "passed",
+  "jobs": [
+    {
+      "name": "test (macos-latest, 3.10)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.10.11",
+      "tests": 33,
+      "seconds": 21.527,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (macos-latest, 3.12)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.12.10",
+      "tests": 33,
+      "seconds": 34.262,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (macos-latest, 3.14)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.14.7",
+      "tests": 33,
+      "seconds": 32.531,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.10)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.10.22",
+      "tests": 33,
+      "seconds": 21.038,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.12)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.12.15",
+      "tests": 33,
+      "seconds": 20.837,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.14)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.14.8",
+      "tests": 33,
+      "seconds": 27.414,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (windows-latest, 3.10)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.10.11",
+      "tests": 33,
+      "seconds": 38.194,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (windows-latest, 3.12)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.12.10",
+      "tests": 33,
+      "seconds": 34.694,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    },
+    {
+      "name": "test (windows-latest, 3.14)",
+      "source_revision": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+      "python": "3.14.8",
+      "tests": 33,
+      "seconds": 43.057,
+      "result": "passed",
+      "skips": 0,
+      "installed_smoke": "passed"
+    }
+  ],
+  "total_test_executions": 297,
+  "distribution_installation_checks": [
+    "wheel fresh venv passed",
+    "sdist fresh venv passed"
+  ]
+}

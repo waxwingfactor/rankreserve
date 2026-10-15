@@ -16,6 +16,8 @@ python -m pip install --no-deps rankreserve-1.0.0-py3-none-any.whl
 rankreserve --version
 ```
 
+In Windows PowerShell, activate with `.\.venv\Scripts\Activate.ps1`. You can also skip activation and use `.\.venv\Scripts\python.exe -m pip ...` followed by `.\.venv\Scripts\rankreserve.exe ...`.
+
 The downloaded wheel installs and runs offline with no third-party runtime packages. The source distribution includes documentation, tests and examples; building it also needs setuptools 77 or newer (pip normally obtains the build dependency). GitHub Releases is the distribution channel; this project does not claim a PyPI publication. Compare downloaded files with `SHA256SUMS` and the GitHub asset digest; see [verification](docs/verification.md).
 
 ## A complete learning workflow

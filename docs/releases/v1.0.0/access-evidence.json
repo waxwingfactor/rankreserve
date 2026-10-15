@@ -1,0 +1,38 @@
+{
+  "verification_date": "2026-10-15",
+  "authentication": "none: urllib public HTTPS requests; no Authorization header",
+  "public_repository": "https://github.com/waxwingfactor/rankreserve",
+  "public_release": "https://github.com/waxwingfactor/rankreserve/releases/tag/v1.0.0",
+  "draft": false,
+  "tag_target": "e36121c5de1b8378ac1e11ae56245f4427586e92",
+  "assets": [
+    {
+      "name": "provenance.json",
+      "size": 1442,
+      "sha256": "ae3a5b9d5e223f0560cdc9c818b46cf67b87c1490bcc21d20087814a87cba176",
+      "browser_download_url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/provenance.json",
+      "github_digest_match": true
+    },
+    {
+      "name": "rankreserve-1.0.0-py3-none-any.whl",
+      "size": 18970,
+      "sha256": "39c0a778a9bc5645e9bab31ef6b75b8c3a62f5f5097aa95fc9c98b7b761deb57",
+      "browser_download_url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/rankreserve-1.0.0-py3-none-any.whl",
+      "github_digest_match": true
+    },
+    {
+      "name": "rankreserve-1.0.0.tar.gz",
+      "size": 39646,
+      "sha256": "3d05123cd85559a2ffda0bcd2cf94dd2e4b06cfec958a72163b402be2f4a2ca9",
+      "browser_download_url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/rankreserve-1.0.0.tar.gz",
+      "github_digest_match": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 274,
+      "sha256": "2ec5f4ae1baf27d8a3c4b6af4f8daf69976662440cf5d5f40c729296e2b87e1f",
+      "browser_download_url": "https://github.com/waxwingfactor/rankreserve/releases/download/v1.0.0/SHA256SUMS",
+      "github_digest_match": true
+    }
+  ]
+}
